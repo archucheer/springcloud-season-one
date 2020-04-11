@@ -1,0 +1,39 @@
+server:
+  port: 9527
+
+
+spring:
+  application:
+    name: springcloud-zuul-gateway-9527
+
+
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+#      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true     #访问路径可以显示IP地址
+
+
+zuul:
+  #隐藏该服务实例名
+#  ignored-services: springcloud-provider-dep
+  prefix: /springcloud   #前缀
+  #隐藏全部服务实例名 禁止通过实例名调用
+  ignored-services: "*"
+  routes:
+    mydep.serviceId: springcloud-provider-dep
+    mydep.path: /myDep/**
+
+
+
+
+#注册中心点击显示应用版本信息 配合使用spring-boot-starter-actuator
+info:
+  app.name: springcloud-zuul-gateway-9527
+  company.name: www.spring.com
+  build.artifactId: springcloud-zuul-gateway-9527  #在父级pom.xml中<bulid/>中通过$符号标识，但是使用$获取不到使用@可以
+  build.version: 0.0.1-SNAPSHOT

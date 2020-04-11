@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springcloud-consumer-feign" />
+        <module name="springcloud-config-client-3355" />
+        <module name="springcloud-provider-8003" />
+        <module name="springcloud-consumer-80" />
+        <module name="springcloud-provider-8001" />
+        <module name="springcloud-eureka-7003" />
+        <module name="springcloud-provider-8001-hystrix" />
+        <module name="springcloud-eureka-7001" />
+        <module name="springcloud-provider-8002" />
+        <module name="springcloud-zuul-gateway-9527" />
+        <module name="springcloud-api" />
+        <module name="springcloud-consumer-hystrix-dashboard" />
+        <module name="springcloud-eureka-7002" />
+        <module name="springcloud-config-3344" />
+        <module name="springcloud-config-eureka-client-7001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="microspringcloud" target="1.5" />
+      <module name="springcloud-api" target="1.5" />
+      <module name="springcloud-config-3344" target="1.5" />
+      <module name="springcloud-config-client-3355" target="1.5" />
+      <module name="springcloud-config-eureka-client-7001" target="1.5" />
+      <module name="springcloud-consumer-80" target="6" />
+      <module name="springcloud-consumer-feign" target="1.5" />
+      <module name="springcloud-consumer-hystrix-dashboard" target="1.5" />
+      <module name="springcloud-eureka-7001" target="1.5" />
+      <module name="springcloud-eureka-7002" target="1.5" />
+      <module name="springcloud-eureka-7003" target="1.5" />
+      <module name="springcloud-provider-8001" target="1.5" />
+      <module name="springcloud-provider-8001-hystrix" target="8" />
+      <module name="springcloud-provider-8002" target="1.5" />
+      <module name="springcloud-provider-8003" target="1.5" />
+      <module name="springcloud-zuul-gateway-9527" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="microspringcloud" options="" />
+      <module name="springcloud-api" options="" />
+      <module name="springcloud-config-3344" options="" />
+      <module name="springcloud-config-client-3355" options="" />
+      <module name="springcloud-config-eureka-client-7001" options="" />
+      <module name="springcloud-consumer-80" options="" />
+      <module name="springcloud-consumer-hystrix-dashboard" options="" />
+      <module name="springcloud-eureka-7001" options="" />
+      <module name="springcloud-eureka-7002" options="" />
+      <module name="springcloud-eureka-7003" options="" />
+      <module name="springcloud-provider-8001" options="" />
+      <module name="springcloud-provider-8001-hystrix" options="" />
+      <module name="springcloud-provider-8002" options="" />
+      <module name="springcloud-provider-8003" options="" />
+      <module name="springcloud-zuul-gateway-9527" options="" />
+    </option>
+  </component>
+</project>
