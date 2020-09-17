@@ -1,12 +1,13 @@
 package com.springcloud.rest;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ConfigClientRest
-{
+@RefreshScope
+public class ConfigClientRest {
 
 	@Value("${spring.application.name}")
 	private String applicationName;

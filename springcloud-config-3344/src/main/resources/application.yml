@@ -4,10 +4,30 @@ server:
 spring:
   application:
     name:  springcloud-config
+
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/shilohchencz/springcloud-config.git #GitHub上面的git仓库名字
+  # 本地配置资源加载方式
+        native:
+          search-locations: E:/config
 
+        health:
+          repositories:
+            env:
+              name: env
+              profiles: default
+              label: master
+
+  profiles:
+    active: native
+
+#        git:
+#          uri: https://github.com/shilohchencz/springcloud-config.git #GitHub上面的git仓库名字
+
+management:
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
 
